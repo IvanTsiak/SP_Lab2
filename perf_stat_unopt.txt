@@ -1,0 +1,23 @@
+Result check: 24792.562500
+
+ Performance counter stats for './matrix_unopt':
+
+           3680.71 msec task-clock                       #    0.999 CPUs utilized             
+                32      context-switches                 #    8.694 /sec                      
+                 5      cpu-migrations                   #    1.358 /sec                      
+              3136      page-faults                      #  852.009 /sec                      
+       29124430771      instructions                     #    1.90  insn per cycle            
+                                                  #    0.00  stalled cycles per insn     (71.44%)
+       15324268484      cycles                           #    4.163 GHz                         (71.43%)
+          95832468      stalled-cycles-frontend          #    0.63% frontend cycles idle        (71.43%)
+        1092451249      branches                         #  296.804 M/sec                       (71.43%)
+           2735268      branch-misses                    #    0.25% of all branches             (71.41%)
+        7586308137      L1-dcache-loads                  #    2.061 G/sec                       (71.43%)
+        1092134332      L1-dcache-load-misses            #   14.40% of all L1-dcache accesses   (71.44%)
+
+       3.682982694 seconds time elapsed
+
+       3.671952000 seconds user
+       0.009994000 seconds sys
+
+

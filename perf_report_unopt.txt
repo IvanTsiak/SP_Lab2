@@ -1,0 +1,548 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 14K of event 'cycles:P'
+# Event count (approx.): 15256344902
+#
+# Children      Self  Command       Shared Object         Symbol                                                  
+# ........  ........  ............  ....................  ........................................................
+#
+    99.99%     0.00%  matrix_unopt  matrix_unopt          [.] _start
+            |
+            ---_start
+               __libc_start_main@@GLIBC_2.34
+               __libc_start_call_main
+               main
+               |          
+                --99.72%--multiply_matrices
+                          |          
+                           --0.69%--asm_common_interrupt
+                                     common_interrupt
+                                     __common_interrupt
+                                     handle_edge_irq
+                                     handle_irq_event
+                                     __handle_irq_event_percpu
+                                     amdgpu_irq_handler
+                                     |          
+                                      --0.68%--amdgpu_ih_process
+                                                |          
+                                                 --0.65%--amdgpu_irq_dispatch
+                                                           |          
+                                                            --0.57%--amdgpu_dm_irq_handler
+
+    99.99%     0.00%  matrix_unopt  libc.so.6             [.] __libc_start_main@@GLIBC_2.34
+            |
+            ---__libc_start_main@@GLIBC_2.34
+               __libc_start_call_main
+               main
+               |          
+                --99.72%--multiply_matrices
+                          |          
+                           --0.69%--asm_common_interrupt
+                                     common_interrupt
+                                     __common_interrupt
+                                     handle_edge_irq
+                                     handle_irq_event
+                                     __handle_irq_event_percpu
+                                     amdgpu_irq_handler
+                                     |          
+                                      --0.68%--amdgpu_ih_process
+                                                |          
+                                                 --0.65%--amdgpu_irq_dispatch
+                                                           |          
+                                                            --0.57%--amdgpu_dm_irq_handler
+
+    99.99%     0.00%  matrix_unopt  libc.so.6             [.] __libc_start_call_main
+            |
+            ---__libc_start_call_main
+               main
+               |          
+                --99.72%--multiply_matrices
+                          |          
+                           --0.69%--asm_common_interrupt
+                                     common_interrupt
+                                     __common_interrupt
+                                     handle_edge_irq
+                                     handle_irq_event
+                                     __handle_irq_event_percpu
+                                     amdgpu_irq_handler
+                                     |          
+                                      --0.68%--amdgpu_ih_process
+                                                |          
+                                                 --0.65%--amdgpu_irq_dispatch
+                                                           |          
+                                                            --0.57%--amdgpu_dm_irq_handler
+
+    99.99%     0.00%  matrix_unopt  matrix_unopt          [.] main
+            |
+            ---main
+               |          
+                --99.72%--multiply_matrices
+                          |          
+                           --0.69%--asm_common_interrupt
+                                     common_interrupt
+                                     __common_interrupt
+                                     handle_edge_irq
+                                     handle_irq_event
+                                     __handle_irq_event_percpu
+                                     amdgpu_irq_handler
+                                     |          
+                                      --0.68%--amdgpu_ih_process
+                                                |          
+                                                 --0.65%--amdgpu_irq_dispatch
+                                                           |          
+                                                            --0.57%--amdgpu_dm_irq_handler
+
+    99.72%    98.68%  matrix_unopt  matrix_unopt          [.] multiply_matrices
+            |          
+            |--98.68%--_start
+            |          __libc_start_main@@GLIBC_2.34
+            |          __libc_start_call_main
+            |          main
+            |          multiply_matrices
+            |          
+             --1.04%--multiply_matrices
+                       |          
+                        --0.66%--asm_common_interrupt
+                                  common_interrupt
+                                  __common_interrupt
+                                  handle_edge_irq
+                                  handle_irq_event
+                                  __handle_irq_event_percpu
+                                  amdgpu_irq_handler
+                                  |          
+                                   --0.65%--amdgpu_ih_process
+                                             |          
+                                              --0.61%--amdgpu_irq_dispatch
+                                                        |          
+                                                         --0.53%--amdgpu_dm_irq_handler
+
+     0.69%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] asm_common_interrupt
+            |
+            ---asm_common_interrupt
+               common_interrupt
+               __common_interrupt
+               handle_edge_irq
+               handle_irq_event
+               __handle_irq_event_percpu
+               amdgpu_irq_handler
+               |          
+                --0.68%--amdgpu_ih_process
+                          |          
+                           --0.65%--amdgpu_irq_dispatch
+                                     |          
+                                      --0.57%--amdgpu_dm_irq_handler
+
+     0.69%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] common_interrupt
+            |          
+             --0.68%--common_interrupt
+                       __common_interrupt
+                       handle_edge_irq
+                       handle_irq_event
+                       __handle_irq_event_percpu
+                       amdgpu_irq_handler
+                       |          
+                        --0.68%--amdgpu_ih_process
+                                  |          
+                                   --0.65%--amdgpu_irq_dispatch
+                                             |          
+                                              --0.57%--amdgpu_dm_irq_handler
+
+     0.69%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __common_interrupt
+            |
+            ---__common_interrupt
+               handle_edge_irq
+               handle_irq_event
+               __handle_irq_event_percpu
+               amdgpu_irq_handler
+               |          
+                --0.68%--amdgpu_ih_process
+                          |          
+                           --0.65%--amdgpu_irq_dispatch
+                                     |          
+                                      --0.57%--amdgpu_dm_irq_handler
+
+     0.69%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] handle_edge_irq
+            |
+            ---handle_edge_irq
+               handle_irq_event
+               __handle_irq_event_percpu
+               amdgpu_irq_handler
+               |          
+                --0.68%--amdgpu_ih_process
+                          |          
+                           --0.65%--amdgpu_irq_dispatch
+                                     |          
+                                      --0.57%--amdgpu_dm_irq_handler
+
+     0.69%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] handle_irq_event
+            |
+            ---handle_irq_event
+               __handle_irq_event_percpu
+               amdgpu_irq_handler
+               |          
+                --0.68%--amdgpu_ih_process
+                          |          
+                           --0.65%--amdgpu_irq_dispatch
+                                     |          
+                                      --0.57%--amdgpu_dm_irq_handler
+
+     0.69%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __handle_irq_event_percpu
+            |
+            ---__handle_irq_event_percpu
+               amdgpu_irq_handler
+               |          
+                --0.68%--amdgpu_ih_process
+                          |          
+                           --0.65%--amdgpu_irq_dispatch
+                                     |          
+                                      --0.57%--amdgpu_dm_irq_handler
+
+     0.69%     0.01%  matrix_unopt  [amdgpu]              [k] amdgpu_irq_handler
+            |          
+             --0.68%--amdgpu_irq_handler
+                       |          
+                        --0.68%--amdgpu_ih_process
+                                  |          
+                                   --0.65%--amdgpu_irq_dispatch
+                                             |          
+                                              --0.57%--amdgpu_dm_irq_handler
+
+     0.68%     0.00%  matrix_unopt  [amdgpu]              [k] amdgpu_ih_process
+            |
+            ---amdgpu_ih_process
+               |          
+                --0.65%--amdgpu_irq_dispatch
+                          |          
+                           --0.57%--amdgpu_dm_irq_handler
+
+     0.65%     0.00%  matrix_unopt  [amdgpu]              [k] amdgpu_irq_dispatch
+            |
+            ---amdgpu_irq_dispatch
+               |          
+                --0.57%--amdgpu_dm_irq_handler
+
+     0.57%     0.01%  matrix_unopt  [amdgpu]              [k] amdgpu_dm_irq_handler
+            |          
+             --0.56%--amdgpu_dm_irq_handler
+
+     0.52%     0.10%  matrix_unopt  [amdgpu]              [k] amdgpu_cgs_read_register
+     0.52%     0.01%  matrix_unopt  [amdgpu]              [k] dm_read_reg_func
+            |          
+             --0.51%--dm_read_reg_func
+                       amdgpu_cgs_read_register
+                       amdgpu_device_rreg
+
+     0.52%     0.00%  matrix_unopt  [amdgpu]              [k] amdgpu_device_rreg
+            |
+            ---amdgpu_device_rreg
+
+     0.45%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] drm_update_vblank_count
+     0.41%     0.01%  matrix_unopt  [amdgpu]              [k] dm_crtc_high_irq
+     0.40%     0.00%  matrix_unopt  [amdgpu]              [k] amdgpu_dm_crtc_handle_vblank
+     0.40%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] drm_crtc_handle_vblank
+     0.40%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] drm_handle_vblank
+     0.36%     0.00%  matrix_unopt  [amdgpu]              [k] amdgpu_get_vblank_counter_kms
+     0.33%     0.09%  matrix_unopt  [amdgpu]              [k] generic_reg_get
+     0.33%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __get_vblank_counter
+     0.32%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] asm_sysvec_apic_timer_interrupt
+     0.30%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] sysvec_apic_timer_interrupt
+     0.29%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] __sysvec_apic_timer_interrupt
+     0.28%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] hrtimer_interrupt
+     0.27%     0.00%  matrix_unopt  [amdgpu]              [k] amdgpu_display_get_crtc_scanoutpos
+     0.27%     0.00%  matrix_unopt  [amdgpu]              [k] dm_crtc_get_scanoutpos
+     0.27%     0.00%  matrix_unopt  [amdgpu]              [k] dc_stream_get_scanoutpos
+     0.27%     0.00%  matrix_unopt  [amdgpu]              [k] optc1_get_crtc_scanoutpos
+     0.24%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __hrtimer_run_queues
+     0.23%     0.11%  matrix_unopt  matrix_unopt          [.] init_matrices
+     0.21%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] tick_nohz_handler
+     0.19%     0.07%  matrix_unopt  [amdgpu]              [k] dm_vblank_get_counter
+     0.19%     0.00%  matrix_unopt  [amdgpu]              [k] dc_stream_get_vblank_counter
+     0.19%     0.00%  matrix_unopt  [amdgpu]              [k] optc1_get_vblank_counter
+     0.16%     0.00%  matrix_unopt  [amdgpu]              [k] generic_reg_get2
+     0.16%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] update_process_times
+     0.15%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] sched_tick
+     0.13%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] asm_exc_page_fault
+     0.12%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] exc_page_fault
+     0.11%     0.01%  matrix_unopt  [amdgpu]              [k] optc1_get_position
+     0.11%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] do_user_addr_fault
+     0.11%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] drm_crtc_get_last_vbltimestamp
+     0.11%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] drm_crtc_vblank_helper_get_vblank_timestamp
+     0.11%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] drm_crtc_vblank_helper_get_vblank_timestamp_internal
+     0.11%     0.00%  matrix_unopt  [amdgpu]              [k] amdgpu_crtc_get_scanout_position
+     0.11%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] handle_mm_fault
+     0.10%     0.02%  matrix_unopt  [kernel.kallsyms]     [k] __irqentry_text_end
+     0.09%     0.07%  matrix_unopt  [kernel.kallsyms]     [k] read_tsc
+     0.09%     0.08%  matrix_unopt  [kernel.kallsyms]     [k] __raw_spin_lock_irqsave
+     0.08%     0.08%  matrix_unopt  [amdgpu]              [k] dc_exit_ips_for_hw_access_internal
+     0.08%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __handle_mm_fault
+     0.08%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] handle_pte_fault
+     0.08%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] do_anonymous_page
+     0.08%     0.00%  matrix_unopt  [amdgpu]              [k] dm_pflip_high_irq
+     0.07%     0.01%  matrix_unopt  [amdgpu]              [k] dal_irq_service_ack
+     0.07%     0.00%  matrix_unopt  [amdgpu]              [k] dc_interrupt_ack
+     0.06%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] task_tick_fair
+     0.06%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] _raw_spin_lock_irqsave
+     0.06%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] sched_balance_trigger
+     0.05%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] drm_crtc_accurate_vblank_count
+     0.05%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] tick_do_update_jiffies64
+     0.05%     0.02%  matrix_unopt  [kernel.kallsyms]     [k] nohz_balancer_kick
+     0.05%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] sched_use_asym_prio
+     0.04%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] timekeeping_advance
+     0.04%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] entry_SYSCALL_64_after_hwframe
+     0.04%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] do_syscall_64
+     0.04%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] x64_sys_call
+     0.04%     0.00%  matrix_unopt  libc.so.6             [.] __munmap
+     0.04%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __x64_sys_munmap
+     0.04%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __vm_munmap
+     0.04%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] do_vmi_munmap
+     0.04%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] do_vmi_align_munmap
+     0.04%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] vms_complete_munmap_vmas
+     0.04%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] vms_clear_ptes
+     0.04%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] alloc_anon_folio
+     0.04%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] update_wall_time
+     0.04%     0.04%  matrix_unopt  [kernel.kallsyms]     [k] srso_alias_return_thunk
+     0.03%     0.02%  matrix_unopt  [kernel.kallsyms]     [k] clear_page_erms
+     0.03%     0.01%  matrix_unopt  [amdgpu]              [k] navi10_ih_get_wptr
+     0.03%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] update_load_avg
+     0.02%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] _raw_spin_lock
+     0.02%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __alloc_frozen_pages_noprof
+     0.02%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] tlb_finish_mmu
+     0.02%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __tlb_batch_free_encoded_pages
+     0.02%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] free_pages_and_swap_cache
+     0.02%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] folios_put_refs
+     0.02%     0.01%  matrix_unopt  [amdgpu]              [k] gfx_v10_0_eop_irq
+     0.02%     0.00%  matrix_unopt  [amdgpu]              [k] amdgpu_fence_process
+     0.02%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] dma_fence_signal
+     0.02%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] __update_load_avg_cfs_rq
+     0.02%     0.00%  matrix_unopt  [amdgpu]              [k] amdgpu_ih_decode_iv_helper
+     0.02%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __wake_up
+     0.02%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] propagate_entity_load_avg
+     0.02%     0.02%  matrix_unopt  [kernel.kallsyms]     [k] srso_alias_safe_ret
+     0.02%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] vma_alloc_folio_noprof
+     0.02%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] folio_alloc_mpol_noprof
+     0.02%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] alloc_pages_mpol
+     0.02%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] get_page_from_freelist
+     0.02%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] __lruvec_stat_mod_folio
+     0.02%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] folio_add_lru
+     0.02%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] clockevents_program_event
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] __rcu_read_unlock
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] zap_present_ptes.constprop.0
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] unmap_vmas
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] unmap_single_vma
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] unmap_page_range
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] zap_pud_range.isra.0
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] zap_pmd_range.isra.0
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] zap_pte_range
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] __mem_cgroup_uncharge_folios
+     0.01%     0.01%  matrix_unopt  [kvm]                 [k] pvclock_gtod_notify
+     0.01%     0.01%  matrix_unopt  [gpu_sched]           [k] drm_sched_job_done_cb
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] dma_fence_signal_timestamp_locked
+     0.01%     0.00%  matrix_unopt  [gpu_sched]           [k] drm_sched_job_done.isra.0
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] perf_ibs_start
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] native_read_msr
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] sched_clock_noinstr
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] update_curr
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] raw_notifier_call_chain
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] __queue_work
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] irq_chip_ack_parent
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] timekeeping_update_from_shadow.constprop.0
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] sched_clock_cpu
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] arch_asym_cpu_priority
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] perf_event_update_userpage
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] perf_event_task_tick
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] enqueue_hrtimer
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] idle_cpu
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] error_entry
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] irq_exit_rcu
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __irq_exit_rcu
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] handle_softirqs
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] folio_add_lru_vma
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __folio_batch_add_and_move
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] folio_batch_move_lru
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] rmqueue.isra.0
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __rmqueue_pcplist
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] rmqueue_bulk
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] irqentry_exit_to_user_mode
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] native_send_call_func_single_ipi
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] tick_program_event
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] folio_add_new_anon_rmap
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __folio_mod_stat
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] irq_work_tick
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] uncharge_folio
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] folio_remove_rmap_ptes
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __mod_memcg_lruvec_state
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] uncharge_batch
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] memcg1_uncharge_batch
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] memcg1_check_events
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __mem_cgroup_threshold
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] __drm_dev_dbg
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] _find_next_bit
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] queue_work_on
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] kick_pool
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] wake_up_process
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] try_to_wake_up
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] select_task_rq
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] sched_clock
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] arch_scale_freq_tick
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] native_write_msr
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] perf_adjust_freq_unthr_context
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] perf_adjust_freq_unthr_events
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] add_interrupt_randomness
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] arch_exit_to_user_mode_prepare.isra.0
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __irqentry_text_start
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] calc_timer_values
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] rcu_core_si
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] rcu_core
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] native_queued_spin_lock_slowpath
+     0.01%     0.01%  matrix_unopt  [amdgpu]              [k] dm_write_reg_func
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] rcu_segcblist_ready_cbs
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] ktime_get_update_offsets_now
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] rcu_sched_clock_irq
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] update_min_vruntime
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] rcu_disable_urgency_upon_qs
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] fast_mix
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] should_we_balance
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] update_cfs_group
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] hrtimer_update_next_event
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] timerqueue_del
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __remove_hrtimer
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] _raw_spin_unlock_irqrestore
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] update_vsyscall
+     0.01%     0.01%  matrix_unopt  [amdgpu]              [k] amdgpu_dm_crtc_handle_crc_window_irq
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] update_rq_clock
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] drm_crtc_send_vblank_event
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] send_vblank_event
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] drm_send_event_timestamp_locked
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] drm_send_event_helper
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __wake_up_common
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] native_irq_return_iret
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] sync_regs
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] asm_sysvec_irq_work
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] sysvec_irq_work
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __sysvec_irq_work
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] irq_work_run
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] irq_work_run_list
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] irq_work_single
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] dma_fence_chain_irq_work
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] dma_fence_chain_enable_signaling
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] dma_fence_chain_walk
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] dma_fence_chain_walk.part.0
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] __mod_lruvec_state
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] smp_call_function_single_async
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] irqentry_exit
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] schedule
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __schedule
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] _find_first_bit
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] timerqueue_add
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] reweight_entity
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] put_prev_entity
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] pick_next_task
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __pick_next_task
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] pick_next_task_fair
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] update_fast_timekeeper
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] account_process_tick
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] account_user_time
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] mas_walk
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __mem_cgroup_charge
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] pte_offset_map_rw_nolock
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] percpu_counter_add_batch
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] sched_balance_softirq
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] sched_balance_update_blocked_averages
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __update_blocked_fair
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __update_load_avg_se
+     0.01%     0.01%  matrix_unopt  [kernel.kallsyms]     [k] charge_memcg
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] count_memcg_events.constprop.0
+     0.01%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __count_memcg_events
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] mksaveddirty_shift
+     0.00%     0.00%  matrix_unopt  ld-linux-x86-64.so.2  [.] _dl_start_user
+     0.00%     0.00%  matrix_unopt  ld-linux-x86-64.so.2  [.] _dl_start
+     0.00%     0.00%  matrix_unopt  ld-linux-x86-64.so.2  [.] _dl_sysdep_start
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] lru_gen_add_folio
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] lru_add
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] memcg1_commit_charge
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] folio_add_file_rmap_ptes
+     0.00%     0.00%  matrix_unopt  libc.so.6             [.] __libc_early_init
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] do_fault
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] do_read_fault
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] filemap_map_pages
+     0.00%     0.00%  matrix_unopt  ld-linux-x86-64.so.2  [.] dl_main
+     0.00%     0.00%  matrix_unopt  ld-linux-x86-64.so.2  [.] _dl_catch_exception
+     0.00%     0.00%  matrix_unopt  [unknown]             [k] 0x00007cc74e16af3b
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __x64_sys_execve
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] do_execveat_common.isra.0
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] bprm_execve
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] bprm_execve.part.0
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] exec_binprm
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] load_elf_binary
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __put_user_8
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] create_elf_tables
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] mas_wr_store_type
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] elf_load
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] vm_mmap
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] vm_mmap_pgoff
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] do_mmap
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] mmap_region
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __mmap_region
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __mmap_new_vma
+     0.00%     0.00%  matrix_unopt  [overlay]             [k] ovl_mmap
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] backing_file_mmap
+     0.00%     0.00%  matrix_unopt  [overlay]             [k] ovl_inode_upper
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] finish_task_switch.isra.0
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] asm_sysvec_reschedule_ipi
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] sysvec_reschedule_ipi
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __x86_indirect_thunk_r14
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] begin_new_exec
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __set_task_comm
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] perf_event_comm
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] perf_event_comm_event.constprop.0
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] perf_iterate_sb.constprop.0
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] perf_iterate_ctx
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] perf_output_begin
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] __perf_event_task_sched_in
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] perf_event_sched_in
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] ctx_sched_in
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] merge_sched_in
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] visit_groups_merge.constprop.0.isra.0
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] event_sched_in
+     0.00%     0.00%  perf-exec     [unknown]             [k] 0x00007cc74e16af3b
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] entry_SYSCALL_64_after_hwframe
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] do_syscall_64
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] x64_sys_call
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] __x64_sys_execve
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] do_execveat_common.isra.0
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] bprm_execve
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] bprm_execve.part.0
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] exec_binprm
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] load_elf_binary
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] begin_new_exec
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] perf_event_exec
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] perf_event_enable_on_exec
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] ctx_resched
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] perf_event_sched_in
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] ctx_sched_in
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] visit_groups_merge.constprop.0.isra.0
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] arch_perf_update_userpage
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] perf_event_groups_next
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] nmi_restore
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] perf_pmu_nop_int
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] perf_ibs_add
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] pv_native_write_cr2
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] perf_event_groups_next
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] merge_sched_in
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] event_sched_in
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] perf_ibs_add
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] perf_ibs_start
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] perf_event_update_userpage
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] calc_timer_values
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] perf_event_idx_default
+     0.00%     0.00%  matrix_unopt  [kernel.kallsyms]     [k] perf_ibs_handle_irq
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] perf_ibs_handle_irq
+     0.00%     0.00%  perf-exec     [kernel.kallsyms]     [k] native_write_msr
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#
