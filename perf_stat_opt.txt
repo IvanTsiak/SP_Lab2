@@ -1,0 +1,23 @@
+Result check: 24792.562500
+
+ Performance counter stats for './matrix_opt':
+
+             94.94 msec task-clock                       #    0.986 CPUs utilized             
+                 1      context-switches                 #   10.533 /sec                      
+                 1      cpu-migrations                   #   10.533 /sec                      
+              4162      page-faults                      #   43.836 K/sec                     
+         505385468      instructions                     #    1.83  insn per cycle            
+                                                  #    0.04  stalled cycles per insn     (70.56%)
+         276092141      cycles                           #    2.908 GHz                         (70.51%)
+          20182666      stalled-cycles-frontend          #    7.31% frontend cycles idle        (71.13%)
+          73277697      branches                         #  771.798 M/sec                       (72.23%)
+           1148470      branch-misses                    #    1.57% of all branches             (72.60%)
+         415605774      L1-dcache-loads                  #    4.377 G/sec                       (72.01%)
+          71722570      L1-dcache-load-misses            #   17.26% of all L1-dcache accesses   (70.97%)
+
+       0.096330842 seconds time elapsed
+
+       0.085315000 seconds user
+       0.011040000 seconds sys
+
+
