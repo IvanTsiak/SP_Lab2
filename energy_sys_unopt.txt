@@ -1,0 +1,4 @@
+Result check: 24792.562500
+3.496461 sec
+CorWatt	PkgWatt
+12.06	22.92

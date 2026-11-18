@@ -1,0 +1,635 @@
+____________________________________________________________________
+			P o w e r T O P
+
+____________________________________________________________________
+ *  *  *   System Information   *  *  *
+
+PowerTOP Version;2.15 ran at Wed Nov 18 13:40:31 2026
+
+Kernel Version;Linux version 6.14.0-37-generic
+System Name;RBSportage_RBHV1.52
+CPU Information;12 AMD Ryzen 5 7535HS with Radeon Graphics
+OS Information;Linux Mint 22.3
+
+Target: 1 units/s;System:  8007.6 wakeup/s;CPU:  82.8% usage;GPU: 0 ops/s;GFX: 1.1 wakeups/s;VFS: 0 ops/s;
+
+____________________________________________________________________
+ *  *  *   Top 10 Power Consumers   *  *  *
+
+Usage;Events/s;Category;Description
+  1.2%;2864.3;Timer;tick_nohz_handler
+ 13.0%;1175.2;Process;[PID 3060] /usr/lib/firefox/firefox 
+  4.2%;636.2;Process;[PID 1865] /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch 
+  1.9%;474.4;Process;[PID 2226] xfwm4 
+  1.2%;410.8;Process;[PID 3222] /usr/lib/firefox/firefox 
+ 19.8%;325.9;Process;[PID 3409] /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:40800 -prefMapHandle 1:273205 -jsInitHandle 2
+  0.8%;308.4;Interrupt;[7] sched(softirq)
+  0.9%;270.0;Interrupt;[90] amdgpu
+  0.5%;245.1;kWork;drm_sched_run_job_work
+  0.1%;243.4;kWork;drm_sched_free_job_work
+
+____________________________________________________________________
+ *  *  *   Processor Idle State Report   *  *  *
+
+Package;0
+POLL;  0.0%
+C1;  0.9%
+C2; 16.5%
+C3; 74.6%
+;
+;
+
+;Core 0
+POLL;  0.0%
+C1;  1.4%
+C2; 22.4%
+C3; 70.5%
+;Core 1
+POLL;  0.0%
+C1;  0.5%
+C2; 12.4%
+C3; 62.7%
+;Core 2
+POLL;  0.0%
+C1;  0.6%
+C2; 18.8%
+C3; 75.8%
+;Core 3
+POLL;  0.0%
+C1;  0.8%
+C2; 18.8%
+C3; 73.8%
+;Core 4
+POLL;  0.0%
+C1;  1.0%
+C2; 10.9%
+
+CPU;0;CPU;1
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  2.1%;   0.3 ms;  0.7%;   0.2 ms
+C2; 30.4%;   0.5 ms; 14.4%;   0.4 ms
+C3; 59.2%;   1.9 ms; 81.8%;   2.7 ms
+CPU;2;CPU;3
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  1.0%;   0.2 ms;  0.0%;   0.0 ms
+C2; 21.6%;   0.5 ms;  3.2%;   0.6 ms
+C3; 66.1%;   2.0 ms; 59.2%;   3.2 ms
+CPU;4;CPU;5
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  0.7%;   0.2 ms;  0.6%;   0.1 ms
+C2; 19.4%;   0.5 ms; 18.1%;   0.4 ms
+C3; 74.6%;   2.6 ms; 77.0%;   1.9 ms
+CPU;6;CPU;7
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  1.4%;   0.2 ms;  0.2%;   0.1 ms
+C2; 23.6%;   0.4 ms; 14.0%;   0.4 ms
+C3; 64.5%;   1.9 ms; 83.1%;   3.1 ms
+CPU;8;CPU;9
+POLL;  0.0%;   0.0 ms;  0.0%;   0.0 ms
+C1;  1.7%;   0.3 ms;  0.4%;   0.3 ms
+C2; 17.7%;   0.4 ms;  4.1%;   0.4 ms
+;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+
+____________________________________________________________________
+ *  *  *   Processor Frequency Report   *  *  *
+
+Package;0
+Idle; 100.0% 
+;
+;
+;
+;
+
+;Core 0
+Idle; 100.0% 
+;Core 1
+Idle; 100.0% 
+;Core 2
+Idle; 100.0% 
+;Core 3
+Idle; 100.0% 
+;Core 4
+Idle; 100.0% 
+;Core 5
+Idle; 100.0% 
+;
+;
+;
+;
+;
+;
+
+CPU 0;CPU 1
+Idle; 100.0% ; 100.0% 
+CPU 2;CPU 3
+Idle; 100.0% ; 100.0% 
+CPU 4;CPU 5
+Idle; 100.0% ; 100.0% 
+CPU 6;CPU 7
+Idle; 100.0% ; 100.0% 
+CPU 8;CPU 9
+Idle; 100.0% ; 100.0% 
+CPU 10;CPU 11
+Idle; 100.0% ; 100.0% 
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+
+____________________________________________________________________
+ *  *  *   Overview of Software Power Consumers   *  *  *
+
+Usage;Wakeups/s;GPU ops/s;Disk IO/s;GFX Wakeups/s;Category;Description
+ 11.6 ms/s;2864.3;;;;Timer;tick_nohz_handler
+130.4 ms/s;1175.2;;;;Process;[PID 3060] /usr/lib/firefox/firefox 
+ 42.0 ms/s;636.2;;;;Process;[PID 1865] /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch 
+ 19.0 ms/s;474.4;;;  1.2;Process;[PID 2226] xfwm4 
+ 12.2 ms/s;410.8;;;;Process;[PID 3222] /usr/lib/firefox/firefox 
+198.1 ms/s;325.9;;;;Process;[PID 3409] /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:40800 -prefMapHandle 1:273205 -jsInitHandle 2
+  7.5 ms/s;308.4;;;;Interrupt;[7] sched(softirq)
+  9.3 ms/s;270.0;;;;Interrupt;[90] amdgpu
+  4.6 ms/s;245.1;;;;kWork;drm_sched_run_job_work
+571.0 us/s;243.4;;;;kWork;drm_sched_free_job_work
+  7.4 ms/s;198.6;;;;Process;[PID 3419] /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:40800 -prefMapHandle 1:273205 -jsInitHandle 2
+  6.9 ms/s;155.7;;;;Process;[PID 3089] /usr/lib/firefox/firefox 
+  1.2 ms/s;143.9;;;;Process;[PID 18] [rcu_preempt]
+317.2 ms/s;;;;;Process;[PID 6241] matrix_unopt
+  3.3 ms/s;104.2;;;;Process;[PID 3207] /usr/lib/firefox/firefox 
+321.2 us/s; 86.1;;;;Timer;inactive_task_timer
+ 14.7 ms/s; 57.5;;;;kWork;commit_work
+  3.0 ms/s; 58.3;;;;Timer;hrtimer_wakeup
+  0.7 ms/s; 29.6;;;;kWork;usb_giveback_urb_bh
+  3.4 ms/s; 22.7;;;;Process;[PID 4819] xfce4-terminal 
+  3.0 ms/s; 19.5;;;;Process;[PID 2255] xfce4-panel 
+478.3 us/s; 19.5;;;;Process;[PID 3086] /usr/lib/firefox/firefox 
+  1.1 ms/s; 14.1;;;;Process;[PID 3758] /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:45552 -prefMapHandle 1:273205 -jsInitHandle 2
+681.0 us/s;  9.9;;;;Process;[PID 2564] /usr/bin/python3 /usr/bin/blueman-tray 
+  0.9 ms/s;  9.3;;;;Process;[PID 3833] /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:45552 -prefMapHandle 1:273205 -jsInitHandle 2
+354.3 us/s;  9.1;;;;Process;[PID 2207] /usr/libexec/at-spi2-registryd --use-gnome-session 
+ 59.7 us/s;  8.4;;;;kWork;psi_avgs_work
+224.2 us/s;  7.4;;;;Interrupt;[6] tasklet(softirq)
+  4.4 ms/s;  5.2;;;;Process;[PID 3303] /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:29910 -prefMapHandle 1:273205 -jsInitHandle 2
+573.9 us/s;  6.6;;;;Process;[PID 2267] xfdesktop 
+ 90.3 us/s;  6.4;;;;Process;[PID 1403] [mt76-tx phy0]
+139.8 us/s;  6.2;;;;Process;[PID 3776] /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:45552 -prefMapHandle 1:273205 -jsInitHandle 2
+147.4 us/s;  5.8;;;;Process;[PID 1206] [napi/phy0-0]
+133.8 us/s;  5.0;;;;Process;[PID 5331] /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:45850 -prefMapHandle 1:273205 -jsInitHandle 2
+104.6 us/s;  4.8;;;;Process;[PID 1203] [napi/phy0-0]
+115.9 us/s;  4.2;;;;Process;[PID 3325] /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:29910 -prefMapHandle 1:273205 -jsInitHandle 2
+250.4 us/s;  3.8;;;;Process;[PID 5313] /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:45850 -prefMapHandle 1:273205 -jsInitHandle 2
+ 15.0 us/s;  3.4;;;;kWork;mt792x_pm_power_save_work
+236.4 us/s;  3.0;;;;Process;[PID 4140] /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:45807 -prefMapHandle 1:273205 -jsInitHandle 2
+ 75.4 us/s;  2.8;;;;Process;[PID 4182] /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:45807 -prefMapHandle 1:273205 -jsInitHandle 2
+249.4 us/s;  2.6;;;;Process;[PID 2235] xfsettingsd 
+  4.5 ms/s;  0.6;;;;Process;[PID 4809] [kworker/u48:0]
+  1.3 us/s;  2.2;;;;kWork;mt792x_pm_wake_work
+ 61.8 us/s;  2.0;;;;Process;[PID 3851] /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:45552 -prefMapHandle 1:273205 -jsInitHandle 2
+ 28.5 us/s;  2.0;;;;Process;[PID 98] [kcompactd0]
+ 20.3 us/s;  2.0;;;;Timer;watchdog_timer_fn
+  3.9 ms/s;  0.4;;;;Process;[PID 5810] [kworker/u48:2]
+121.2 us/s;  1.8;;;;Process;[PID 1934] /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+ 25.6 us/s;  1.8;;;;Process;[PID 268] [usb-storage]
+  4.3 ms/s;;;;;Process;[PID 6244] powertop --csv=powertop_unopt.csv --time=5 
+ 22.2 us/s;  1.6;;;;Process;[PID 1205] [napi/phy0-0]
+ 15.6 us/s;  1.6;;;;kWork;kfree_rcu_monitor
+ 18.5 us/s;  1.4;;;;Process;[PID 57] [ksoftirqd/1]
+ 13.9 us/s;  1.4;;;;Process;[PID 17] [ksoftirqd/0]
+ 71.8 us/s;  1.2;;;;Process;[PID 5564] /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd 
+245.8 us/s;  1.0;;;;kWork;amdgpu_device_delay_enable_gfx_
+129.3 us/s;  1.0;;;;Process;[PID 979] /usr/lib/systemd/systemd-journald 
+ 26.3 us/s;  1.0;;;;Process;[PID 2273] /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxapp-status-plugi
+ 13.4 us/s;  1.0;;;;kWork;vmstat_shepherd
+  1.2 us/s;  1.0;;;;kWork;iova_depot_work_func
+  1.8 ms/s; 0.20;;;;Interrupt;[9] RCU(softirq)
+159.5 us/s;  0.8;;;;Process;[PID 2261] Thunar --daemon 
+ 21.3 us/s;  0.8;;;;Process;[PID 2526] /usr/libexec/gvfs-afc-volume-monitor 
+ 13.4 us/s;  0.8;;;;Process;[PID 27] [ksoftirqd/2]
+  1.9 ms/s;;;;;Process;[PID 994] [kworker/u48:4]
+ 86.4 us/s;  0.6;;;;kWork;flush_memcg_stats_dwork
+ 83.3 us/s;  0.6;;;;Process;[PID 1659] /usr/sbin/NetworkManager --no-daemon 
+ 42.5 us/s;  0.6;;;;Process;[PID 5561] /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd 
+ 22.1 us/s;  0.6;;;;Process;[PID 1575] /usr/libexec/accounts-daemon 
+ 13.7 us/s;  0.6;;;;kWork;pci_pme_list_scan
+  0.0 us/s;  0.6;;;;kWork;disk_events_workfn
+  0.0 us/s;  0.6;;;;kWork;ttm_bo_delayed_delete
+ 42.2 us/s;  0.4;;;;Process;[PID 2330] nm-applet 
+ 30.4 us/s;  0.4;;;;Process;[PID 2559] /usr/libexec/gvfsd-metadata 
+ 30.2 us/s;  0.4;;;;Process;[PID 2198] /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --addr
+ 24.4 us/s;  0.4;;;;Process;[PID 2373] /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd 
+ 20.8 us/s;  0.4;;;;Process;[PID 1626] /usr/lib/polkit-1/polkitd --no-debug 
+ 14.7 us/s;  0.4;;;;Process;[PID 1708] /usr/sbin/rsyslogd -n -iNONE 
+ 13.9 us/s;  0.4;;;;Process;[PID 1706] /usr/sbin/rsyslogd -n -iNONE 
+ 10.0 us/s;  0.4;;;;Process;[PID 2263] Thunar --daemon 
+  7.8 us/s;  0.4;;;;Process;[PID 51] [ksoftirqd/10]
+  5.2 us/s;  0.4;;;;kWork;cfg80211_wiphy_work
+  4.9 us/s;  0.4;;;;kWork;kfree_rcu_work
+247.6 us/s; 0.20;;;;Process;[PID 1569] /usr/sbin/irqbalance 
+127.4 us/s; 0.20;;;;Process;[PID 2312] nm-applet 
+122.7 us/s; 0.20;;;;Process;[PID 1440] /usr/lib/systemd/systemd-resolved 
+619.9 us/s;;;;;Interrupt;[1] timer(softirq)
+109.9 us/s; 0.20;;;;Process;[PID 1666] /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev 
+ 53.9 us/s; 0.20;;;;kWork;handle_update
+ 34.4 us/s; 0.20;;;;Process;[PID 2272] /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libwhiskermenu.so 1 
+ 32.7 us/s; 0.20;;;;Process;[PID 1564] @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+ 21.7 us/s; 0.20;;;;Process;[PID 2341] /usr/bin/python3 /usr/share/system-config-printer/applet.py 
+ 19.5 us/s; 0.20;;;;Process;[PID 2291] /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxapp-status-plugi
+ 16.5 us/s; 0.20;;;;Process;[PID 45] [ksoftirqd/8]
+ 13.1 us/s; 0.20;;;;Interrupt;[3] net_rx(softirq)
+ 13.1 us/s; 0.20;;;;Timer;timerfd_tmrproc
+ 10.0 us/s; 0.20;;;;Process;[PID 6186] /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd 
+ 10.0 us/s; 0.20;;;;Process;[PID 2224] /usr/bin/gpg-agent --supervised 
+  9.4 us/s; 0.20;;;;Process;[PID 2556] /usr/libexec/gvfsd-metadata 
+  8.1 us/s; 0.20;;;;Process;[PID 3118] /usr/libexec/xdg-desktop-portal 
+
+____________________________________________________________________
+ *  *  *   Device Power Report   *  *  *
+
+Usage;Device Name
+ 82.9%;CPU misc
+ 82.9%;CPU core
+  4.7%;Display backlight
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 19h PSP/CCP
+100.0%;USB device: Silicon-Power16G (UFD 2.0)
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 0
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe GPP Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD/ATI] Rembrandt [Radeon 680M]
+100.0%;PCI Device: Kingston Technology Company, Inc. OM8SEP4 Design-In PCIe 4 NVMe SSD (TLC) (DRAM-less)
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 7
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 5
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge
+100.0%;USB device: xHCI Host Controller
+100.0%;PCI Device: MEDIATEK Corp. MT7921 802.11ax PCI Express Wireless Network Adapter
+100.0%;Radio device: btusb
+100.0%;Radio device: acer-wmi
+100.0%;Radio device: mt7921e
+100.0%;USB device: USB OPTICAL MOUSE 
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 2
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 3
+100.0%;PCI Device: Realtek Semiconductor Co., Ltd. RTL8111/8168/8211/8411 PCI Express Gigabit Ethernet Controller
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 1
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD/ATI] Rembrandt Radeon High Definition Audio Controller
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe GPP Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h-19h IOMMU
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 6
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Root Complex
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h-19h Internal PCIe GPP Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 4
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #4
+100.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe GPP Bridge
+  7.5 pkts/s;Network interface: wlp3s0 (mt7921e)
+  0.0%;Audio codec hwC2D0: Realtek
+  0.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #5
+  0.0%;Audio codec hwC1D0: ATI
+  0.0%;USB device: xHCI Host Controller
+  0.0%;USB device: xHCI Host Controller
+  0.0%;USB device: Wireless_Device (MediaTek Inc.)
+  0.0%;USB device: xHCI Host Controller
+  0.0%;USB device: xHCI Host Controller
+  0.0%;USB device: xHCI Host Controller
+  0.0%;USB device: xHCI Host Controller
+  0.0%;USB device: ACER HD User Facing (Quanta)
+  0.0%;USB device: xHCI Host Controller
+  0.0%;USB device: xHCI Host Controller
+  0.0 pkts/s;Network interface: enp2s0 (r8169)
+  0.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 19h USB4/Thunderbolt PCIe tunnel
+  0.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] ACP/ACP3X/ACP6x Audio Coprocessor
+  0.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #3
+  0.0%;PCI Device: NVIDIA Corporation GA107 [GeForce RTX 2050]
+  0.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h-19h Internal PCIe GPP Bridge
+  0.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #6
+  0.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h/19h HD Audio Controller
+  0.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe GPP Bridge
+  0.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #8
+  0.0%;PCI Device: NVIDIA Corporation Device 2291
+  0.0%;PCI Device: Advanced Micro Devices, Inc. [AMD] Rembrandt USB4/Thunderbolt NHI controller #1
+  0.0%;runtime-dmic-codec.0
+  0.0%;Audio codec hwC0D0: Nvidia
+  0.0%;runtime-microcode
+  0.0%;runtime-PNP0C14:00
+  0.0%;runtime-alarmtimer.0.auto
+  0.0%;runtime-reg-dummy
+  0.0%;runtime-PNP0C0D:00
+  0.0%;runtime-PNP0C09:00
+  0.0%;runtime-PNP0C0A:00
+  0.0%;runtime-acer-wmi
+  0.0%;runtime-kgdboc
+  0.0%;runtime-ACPI0003:00
+  0.0%;runtime-acpi-cpufreq
+  0.0%;runtime-1025165F:00
+  0.0%;runtime-PNP0800:00
+  0.0%;USB device: xHCI Host Controller
+  0.0%;runtime-snd-soc-dummy
+  0.0%;runtime-intel_rapl_msr.0
+  0.0%;runtime-Fixed MDIO bus.0
+  0.0%;runtime-USBC000:00
+  0.0%;runtime-PNP0C0C:00
+  0.0%;runtime-acp_yc_mach.0
+  0.0%;runtime-rtc-efi.0
+  0.0%;runtime-PNP0C14:01
+  0.0%;runtime-AMDI0052:00
+  0.0%;runtime-AMDI0007:00
+  0.0%;runtime-regulatory.0
+  0.0%;runtime-AMDI0010:00
+  0.0%;I2C Adapter (i2c-25): AMDGPU DM i2c hw bus 4
+  0.0%;runtime-MSFT0101:00
+  0.0%;I2C Adapter (i2c-3): SMBus PIIX4 adapter port 1 at 0b20
+  0.0%;runtime-acp_yc_pdm_dma.0
+  0.0%;I2C Device (3-0051): spd5118
+  0.0%;I2C Adapter (i2c-10): nvkm-0000:01:00.0-aux-0004
+  0.0%;I2C Adapter (i2c-1): SMBus PIIX4 adapter port 0 at 0b00
+  0.0%;runtime-pcspkr
+  0.0%;runtime-PNP0C14:02
+  0.0%;I2C Adapter (i2c-29): AMDGPU DM aux hw bus 2
+  0.0%;runtime-NVDA0820:00
+  0.0%;I2C Adapter (i2c-30): AMDGPU DM aux hw bus 3
+  0.0%;runtime-AMDI0100:00
+  0.0%;I2C Adapter (i2c-19): nvkm-0000:01:00.0-bus-0009
+  0.0%;I2C Adapter (i2c-20): nvkm-0000:01:00.0-aux-0009
+  0.0%;I2C Adapter (i2c-12): nvkm-0000:01:00.0-aux-0005
+  0.0%;I2C Adapter (i2c-8): nvkm-0000:01:00.0-aux-0003
+  0.0%;runtime-ACPI000E:00
+  0.0%;runtime-i8042
+  0.0%;runtime-PNP0C04:00
+  0.0%;runtime-10251229:00
+  0.0%;I2C Adapter (i2c-17): nvkm-0000:01:00.0-bus-0008
+  0.0%;runtime-AMDI0030:00
+  0.0%;runtime-efivars.0
+  0.0%;runtime-serial8250
+  0.0%;I2C Adapter (i2c-27): AMDGPU DM i2c hw bus 6
+  0.0%;runtime-PNP0103:00
+  0.0%;I2C Adapter (i2c-18): nvkm-0000:01:00.0-aux-0008
+  0.0%;I2C Adapter (i2c-33): AMDGPU DM aux hw bus 6
+  0.0%;I2C Device (1-0051): spd5118
+  0.0%;I2C Adapter (i2c-23): AMDGPU DM i2c hw bus 2
+  0.0%;I2C Adapter (i2c-13): nvkm-0000:01:00.0-bus-0006
+  0.0%;I2C Adapter (i2c-4): nvkm-0000:01:00.0-bus-0000
+  0.0%;I2C Adapter (i2c-31): AMDGPU DM aux hw bus 4
+  0.0%;I2C Adapter (i2c-21): AMDGPU DM i2c hw bus 0
+  0.0%;I2C Adapter (i2c-11): nvkm-0000:01:00.0-bus-0005
+  0.0%;I2C Adapter (i2c-2): SMBus PIIX4 adapter port 2 at 0b00
+  0.0%;I2C Device (3-0050): spd5118
+  0.0%;I2C Adapter (i2c-0): Synopsys DesignWare I2C adapter
+  0.0%;I2C Adapter (i2c-15): nvkm-0000:01:00.0-bus-0007
+  0.0%;I2C Adapter (i2c-6): nvkm-0000:01:00.0-bus-0002
+  0.0%;I2C Adapter (i2c-9): nvkm-0000:01:00.0-bus-0004
+  0.0%;I2C Adapter (i2c-26): AMDGPU DM i2c hw bus 5
+  0.0%;I2C Adapter (i2c-16): nvkm-0000:01:00.0-aux-0007
+  0.0%;I2C Device (i2c-PIXA3848:00): PIXA3848:00
+  0.0%;I2C Adapter (i2c-7): nvkm-0000:01:00.0-bus-0003
+  0.0%;I2C Adapter (i2c-24): AMDGPU DM i2c hw bus 3
+  0.0%;I2C Adapter (i2c-14): nvkm-0000:01:00.0-aux-0006
+  0.0%;I2C Adapter (i2c-5): nvkm-0000:01:00.0-bus-0001
+  0.0%;I2C Adapter (i2c-32): AMDGPU DM aux hw bus 5
+  0.0%;I2C Device (1-0050): spd5118
+  0.0%;I2C Adapter (i2c-22): AMDGPU DM i2c hw bus 1
+  0.0%;I2C Adapter (i2c-28): AMDGPU DM aux hw bus 0
+____________________________________________________________________
+ *  *  *   Process Device Activity   *  *  *
+
+Process;Device
+systemd;/dev/autofs
+;/dev/kmsg
+;/dev/rfkill
+systemd-journal;/dev/kmsg
+;/dev/kmsg
+bluetoothd;/dev/rfkill
+systemd-logind;/dev/input/event0
+;/dev/input/event1
+;/dev/input/event10
+;/dev/input/event2
+;/dev/input/event3
+;/dev/input/event8
+udisksd;/dev/random
+wpa_supplicant;/dev/rfkill
+;/dev/rfkill
+Xorg;/dev/dri/card1
+;/dev/dri/card1
+;/dev/dri/card1
+;/dev/dri/card1
+;/dev/dri/card2
+;/dev/dri/card2
+;/dev/dri/card2
+;/dev/dri/card2
+;/dev/dri/card2
+;/dev/input/event0
+;/dev/input/event10
+;/dev/input/event2
+;/dev/input/event3
+;/dev/input/event4
+;/dev/input/event5
+;/dev/input/event6
+;/dev/input/event7
+;/dev/input/event8
+;/dev/input/event9
+;/dev/vga_arbiter
+pipewire;/dev/snd/controlC0
+;/dev/snd/controlC1
+;/dev/snd/controlC2
+;/dev/snd/controlC3
+;/dev/snd/seq
+;/dev/snd/seq
+wireplumber;/dev/snd/controlC0
+;/dev/snd/controlC0
+;/dev/snd/controlC0
+;/dev/snd/controlC0
+;/dev/snd/controlC0
+;/dev/snd/controlC1
+;/dev/snd/controlC1
+;/dev/snd/controlC1
+;/dev/snd/controlC1
+;/dev/snd/controlC1
+;/dev/snd/controlC2
+;/dev/snd/controlC2
+;/dev/snd/controlC2
+;/dev/snd/controlC2
+;/dev/snd/controlC2
+;/dev/snd/controlC3
+;/dev/snd/controlC3
+;/dev/snd/controlC3
+;/dev/snd/controlC3
+xfce4-session;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+gvfsd-fuse;/dev/fuse
+xfwm4;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+upowerd;/dev/input/event1
+blueman-applet;/dev/rfkill
+firefox-bin;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+xdg-document-po;/dev/fuse
+RDD Process;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+;/dev/dri/renderD129
+
+____________________________________________________________________
+ *  *  *   AHCI ALPM Residency Statistics - Not supported on this macine   *  *  *
+
+____________________________________________________________________
+ *  *  *   Software Settings in Need of Tuning   *  *  *
+
+Description;Script
+VM writeback timeout;echo '1500' > '/proc/sys/vm/dirty_writeback_centisecs';
+NMI watchdog should be turned off;echo '0' > '/proc/sys/kernel/nmi_watchdog';
+Autosuspend for USB device USB OPTICAL MOUSE  [3-2];echo 'auto' > '/sys/bus/usb/devices/3-2/power/control';
+Autosuspend for USB device Silicon-Power16G [UFD 2.0];echo 'auto' > '/sys/bus/usb/devices/3-1/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD/ATI] Rembrandt [Radeon 680M];echo 'auto' > '/sys/bus/pci/devices/0000:74:00.0/power/control';
+Runtime PM for disk sda;echo 'auto' > '/sys/block/sda/device/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge;echo 'auto' > '/sys/bus/pci/devices/0000:00:08.0/power/control';
+Runtime PM for PCI Device MEDIATEK Corp. MT7921 802.11ax PCI Express Wireless Network Adapter;echo 'auto' > '/sys/bus/pci/devices/0000:03:00.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 3;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.3/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 5;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.5/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller;echo 'auto' > '/sys/bus/pci/devices/0000:00:14.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 7;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.7/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge;echo 'auto' > '/sys/bus/pci/devices/0000:00:02.0/power/control';
+Runtime PM for PCI Device Kingston Technology Company, Inc. OM8SEP4 Design-In PCIe 4 NVMe SSD (TLC) (DRAM-less);echo 'auto' > '/sys/bus/pci/devices/0000:04:00.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 19h PSP/CCP;echo 'auto' > '/sys/bus/pci/devices/0000:74:00.2/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge;echo 'auto' > '/sys/bus/pci/devices/0000:00:03.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 1;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.1/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge;echo 'auto' > '/sys/bus/pci/devices/0000:00:14.3/power/control';
+Runtime PM for PCI Device Realtek Semiconductor Co., Ltd. RTL8111/8168/8211/8411 PCI Express Gigabit Ethernet Controller;echo 'auto' > '/sys/bus/pci/devices/0000:02:00.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge;echo 'auto' > '/sys/bus/pci/devices/0000:00:01.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge;echo 'auto' > '/sys/bus/pci/devices/0000:00:04.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h-19h IOMMU;echo 'auto' > '/sys/bus/pci/devices/0000:00:00.2/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 6;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.6/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 0;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Root Complex;echo 'auto' > '/sys/bus/pci/devices/0000:00:00.0/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 4;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.4/power/control';
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 2;echo 'auto' > '/sys/bus/pci/devices/0000:00:18.2/power/control';
+____________________________________________________________________
+ *  *  *   Untunable Software Issues   *  *  *
+
+Description
+I2C Adapter i2c-3 has no runtime power management
+I2C Adapter i2c-30 has no runtime power management
+I2C Adapter i2c-20 has no runtime power management
+I2C Device 3-0051 has no runtime power management
+I2C Adapter i2c-10 has no runtime power management
+I2C Adapter i2c-1 has no runtime power management
+I2C Adapter i2c-29 has no runtime power management
+I2C Adapter i2c-19 has no runtime power management
+I2C Adapter i2c-27 has no runtime power management
+I2C Adapter i2c-17 has no runtime power management
+I2C Adapter i2c-8 has no runtime power management
+I2C Adapter i2c-25 has no runtime power management
+I2C Adapter i2c-15 has no runtime power management
+I2C Adapter i2c-6 has no runtime power management
+I2C Adapter i2c-33 has no runtime power management
+I2C Device 1-0051 has no runtime power management
+I2C Adapter i2c-23 has no runtime power management
+I2C Adapter i2c-13 has no runtime power management
+I2C Adapter i2c-4 has no runtime power management
+I2C Adapter i2c-31 has no runtime power management
+I2C Adapter i2c-21 has no runtime power management
+I2C Adapter i2c-11 has no runtime power management
+I2C Adapter i2c-2 has no runtime power management
+I2C Device 3-0050 has no runtime power management
+I2C Adapter i2c-0 has no runtime power management
+I2C Adapter i2c-28 has no runtime power management
+I2C Adapter i2c-18 has no runtime power management
+I2C Adapter i2c-9 has no runtime power management
+I2C Adapter i2c-26 has no runtime power management
+I2C Adapter i2c-16 has no runtime power management
+I2C Device i2c-PIXA3848:00 has no runtime power management
+I2C Adapter i2c-7 has no runtime power management
+I2C Adapter i2c-24 has no runtime power management
+I2C Adapter i2c-14 has no runtime power management
+I2C Adapter i2c-5 has no runtime power management
+I2C Adapter i2c-32 has no runtime power management
+I2C Device 1-0050 has no runtime power management
+I2C Adapter i2c-22 has no runtime power management
+I2C Adapter i2c-12 has no runtime power management
+____________________________________________________________________
+ *  *  *   Optimal Tuned Software Settings   *  *  *
+
+Description
+Bluetooth device interface status
+Enable Audio codec power management
+Autosuspend for USB device ACER HD User Facing [Quanta]
+Autosuspend for USB device Wireless_Device [MediaTek Inc.]
+Autosuspend for USB device xHCI Host Controller [usb5]
+Autosuspend for USB device xHCI Host Controller [usb3]
+Autosuspend for USB device xHCI Host Controller [usb10]
+Autosuspend for USB device xHCI Host Controller [usb7]
+Autosuspend for USB device xHCI Host Controller [usb1]
+Autosuspend for USB device xHCI Host Controller [usb8]
+Autosuspend for USB device xHCI Host Controller [usb2]
+Autosuspend for USB device xHCI Host Controller [usb6]
+Autosuspend for USB device xHCI Host Controller [usb4]
+Autosuspend for USB device xHCI Host Controller [usb9]
+Runtime PM for PCI Device NVIDIA Corporation GA107 [GeForce RTX 2050]
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe GPP Bridge
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD/ATI] Rembrandt Radeon High Definition Audio Controller
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h-19h Internal PCIe GPP Bridge
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] ACP/ACP3X/ACP6x Audio Coprocessor
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #6
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h-19h Internal PCIe GPP Bridge
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h/19h HD Audio Controller
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #4
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe GPP Bridge
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 19h USB4/Thunderbolt PCIe tunnel
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe GPP Bridge
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #3
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #5
+Runtime PM for PCI Device NVIDIA Corporation Device 2291
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe GPP Bridge
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Rembrandt USB4/Thunderbolt NHI controller #1
+Runtime PM for PCI Device Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #8
+
+____________________________________________________________________
+ *  *  *   Wake status of the devices   *  *  *
+
+Description;Script
+Wake-on-lan status for device enp2s0;echo 'enabled' > '/sys/class/net/enp2s0/device/power/wakeup';
+Wake-on-lan status for device wlp3s0;echo 'enabled' > '/sys/class/net/wlp3s0/device/power/wakeup';
+Wake status for USB device usb5;echo 'enabled' > '/sys/bus/usb/devices/usb5/power/wakeup';
+Wake status for USB device usb3;echo 'enabled' > '/sys/bus/usb/devices/usb3/power/wakeup';
+Wake status for USB device usb10;echo 'enabled' > '/sys/bus/usb/devices/usb10/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 3-2;echo 'enabled' > '/sys/bus/usb/devices/3-2/power/wakeup';
+Wake status for USB device usb8;echo 'enabled' > '/sys/bus/usb/devices/usb8/power/wakeup';
+Wake status for USB device usb6;echo 'enabled' > '/sys/bus/usb/devices/usb6/power/wakeup';
+Wake status for USB device usb4;echo 'enabled' > '/sys/bus/usb/devices/usb4/power/wakeup';
+Wake status for USB device usb2;echo 'enabled' > '/sys/bus/usb/devices/usb2/power/wakeup';
+Wake status for USB device 3-3;echo 'enabled' > '/sys/bus/usb/devices/3-3/power/wakeup';
+Wake status for USB device usb9;echo 'enabled' > '/sys/bus/usb/devices/usb9/power/wakeup';
+Wake status for USB device usb7;echo 'enabled' > '/sys/bus/usb/devices/usb7/power/wakeup';
